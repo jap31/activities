@@ -29,6 +29,7 @@ public class Inventory {
                         stocknum++;
                         System.out.println("Added!!!!");
                     }else System.out.println("You enter an invalid number!!!!");
+                    cho.scan2();
                     break;
 
                 case 2:
@@ -41,6 +42,7 @@ public class Inventory {
                 System.out.println(" ================================= "); 
                     prod_item=cho.userinputvalidation("Please choose the number of the product:");
                     prods.get(prod_item-1).setdiscontinuing();
+                    cho.scan2();
                     break;
 
                 case 3:
@@ -51,11 +53,17 @@ public class Inventory {
                         System.out.format("%s %15s %20s %20s %s","|",prods.get(x).getName(),prods.get(x).getStock(),prods.get(x).getquantity(),"|\n");
                     }
                 System.out.println("|===========================================================|");
-
-
+                cho.scan2();
+                    break;
+                
+                case 4:
+                    System.out.println("Thank you!!!!");
+                    loop=true;
+                        break;    
+                default:
+                System.out.println("Invalid input!!!!");
             }
             
-            loop=cho.looping("Do you want to run the program again?");
         }
 
 

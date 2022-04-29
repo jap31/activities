@@ -13,8 +13,8 @@ public class mysavings {
 
 		boolean value = false;
 		int num_choice; 
-		float num_value;
-		PiggyBank piggy = new PiggyBank(0f);
+		int num_value;
+		PiggyBank piggy = new PiggyBank(0);
 		while(!value) {
 			cho.choice();
 			
@@ -28,13 +28,13 @@ public class mysavings {
 			
 			case 1:
 				piggy.settotal();
-				cho.display();
+				piggy.display();
 				cho.newline();
 				cho.enter();
 				break;
 			
 			case 2:
-				num_value= cho.userinputvalidationfloat("Enter how many penny you want to add: ");
+				num_value= cho.userinputvalidation("Enter how many penny you want to add: ");
 				if(num_value>0) {
 					piggy.setpenny(num_value);
 					System.out.println("added!!!!");
@@ -50,7 +50,7 @@ public class mysavings {
 				break;
 			
 			case 3:
-				num_value= cho.userinputvalidationfloat("Enter how many nickel you want to add: ");
+				num_value= cho.userinputvalidation("Enter how many nickel you want to add: ");
 				if(num_value>0) {
 					piggy.setnickel(num_value);
 					System.out.println("added!!!!");
@@ -66,7 +66,7 @@ public class mysavings {
 				break;	
 				
 			case 4:
-				num_value= cho.userinputvalidationfloat("Enter how many dime you want to add: ");
+				num_value= cho.userinputvalidation("Enter how many dime you want to add: ");
 				if(num_value>0) {
 					piggy.setdime(num_value);
 					System.out.println("added!!!!");
@@ -82,7 +82,7 @@ public class mysavings {
 				break;
 				
 			case 5:
-				num_value= cho.userinputvalidationfloat("Enter how many quarter you want to add: ");
+				num_value= cho.userinputvalidation("Enter how many quarter you want to add: ");
 				if(num_value>0) {
 					piggy.setquarter(num_value);
 					System.out.println("added!!!!");

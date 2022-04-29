@@ -38,7 +38,7 @@ public class GradeBook implements Serializable{
 
             cho.newline();
         }
-        System.out.print("\t   ==================================================================================================================");
+        System.out.println("\t   ==================================================================================================================");
     }
 
     public void showgrades(int sub_number){
@@ -53,7 +53,7 @@ public class GradeBook implements Serializable{
             System.out.format("%41s",grade_holder/sub_number);
             cho.newline();
         }
-        System.out.print("\t   ===========================================================");
+        System.out.println("\t   ===========================================================");
     }
 
     public float getstudentAvg(int num_choice, int sub_number){

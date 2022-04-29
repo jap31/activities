@@ -35,6 +35,7 @@ public class choices {
             System.out.println("");
             System.out.println();
         }
+
 		public void forloop(){
 			for(int x=0; x<50; x++){System.out.println("");;}
 		}
@@ -55,12 +56,14 @@ public class choices {
 		public void scan(){
 			System.out.println("Please press enter to continue:");
 			input.nextLine();
+			forloop();
 		}
 
 		public void scan2(){
 			System.out.println("Please press enter to continue:");
 			input.nextLine();
 			input.nextLine();
+			forloop();
 		}
 
 

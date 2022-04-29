@@ -1,12 +1,11 @@
 package try3.hello.src.Mysavings.Mysavings;
 
 import java.util.*;
-import java.text.NumberFormat;
+
 
 public class choices {
 	
-	 Locale uslocale = new Locale( "en", "US");
-	 NumberFormat currency = NumberFormat.getCurrencyInstance(uslocale);
+	 
 	 Scanner input = new Scanner(System.in);
 	 Scanner userinput = new Scanner(System.in);
 	
@@ -24,18 +23,6 @@ public class choices {
 		System.out.println("------------------------------------------------------------");
 	}
 
-	 void display(){
-		System.out.println("");
-		System.out.println("------------------------------------------------------------");
-		System.out.println("\t\t   Piggy Bank ");
-		System.out.println("\tPenny                               "+(PiggyBank.getpenny()));
-		System.out.println("\tNickel                              "+PiggyBank.getnickel());
-		System.out.println("\tDime                                "+PiggyBank.getdime());
-		System.out.println("\tQuarter                             "+PiggyBank.getquarter());
-		System.out.println(" ");
-		System.out.println("\tYour current savings is:           "+currency.format(PiggyBank.gettotal()));
-		System.out.println("------------------------------------------------------------");
-	}
 	
 	public  int userinputvalidation(String print){	
 		System.out.print(print);

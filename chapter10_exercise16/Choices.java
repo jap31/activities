@@ -35,10 +35,12 @@ public class Choices {
 			return input.nextInt();	
 		}
     void user_choices(){
+            forloop();
             System.out.println(" ==============================================");   
             System.out.println("|\t[1]/Add item.                         |");
             System.out.println("|\t[2]/Discontinuing an Item.            |");
             System.out.println("|\t[3]/Display all stock.                |");
+            System.out.println("|\t[4]/Quit.                             |");
             System.out.println(" ==============================================");  
     
            }
@@ -77,9 +79,23 @@ public class Choices {
             newline();
             return true;
             
-        }
-
-        
+        }      
 }
+            public void scan(){
+                System.out.println("Please press enter to continue:");
+                input.nextLine();
+            }
+
+            public void scan2(){
+                System.out.println("Please press enter to continue:");
+                input.nextLine();
+                input.nextLine();
+            }
+
+            public void forloop(){
+                for(int x=0; x<50; x++){System.out.println("");;}
+            }    
+
+
     
 }

@@ -37,37 +37,33 @@ public class choices {
         }
 
        void grade_choices(){
+		forloop();
 		System.out.println(" ==============================================");   
         System.out.println("|\t[1]/Show all grades of every student.  |");
         System.out.println("|\t[2]/Show all Average of every student. |");
         System.out.println("|\t[3]/Show Average of specific student.  |");
         System.out.println("|\t[4]/Show grade of specific student.    |");
 		System.out.println("|\t[5]/Show and copy grade to file.       |");
+		System.out.println("|\t[6]/Quit.                              |");
 		System.out.println(" ==============================================");  
 
        }
 
-	   public boolean looping(){
-		
-        String loop;
-        System.out.println("");
-		System.out.println("Do you want to run the programm again? Y(yes)/N(no)");
-		System.out.print("Please enter your choice: ");
-		input.nextLine();
-		loop = input.nextLine();
-        if(loop.equalsIgnoreCase("Y")) {	
-            return false;	
-        }
-        
-        else if(loop.equalsIgnoreCase("N")){
-                System.out.println("Thank you ");
-                return true;
-            }
-        else {
-            System.out.print("Invalid Input!!! The program will be terminated. ");
-            return true;
-        }
-}
+		public void scan(){
+			System.out.println("");
+			System.out.print("Please press enter to continue:");
+			input.nextLine();
+		}
+
+		public void scan2(){
+			System.out.println("");
+			System.out.print("Please press enter to continue:");
+			input.nextLine();
+			input.nextLine();
+		}
+		public void forloop(){
+			for(int x=0; x<50; x++){System.out.println("");;}
+		}
 
 	   
        

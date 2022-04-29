@@ -43,9 +43,11 @@ public class CourseGrades {
             switch(num_choice){
                 case 1:
                     allstudent.getGrades(subject);
+                    cho.scan2();
                     break;
                 case 2:
                     allstudent.showgrades(subject.length);
+                    cho.scan2();
                     break;
                 case 3:
                     for(int x=0; x<allstudent.namelenght(); x++){
@@ -54,7 +56,8 @@ public class CourseGrades {
                     name_num=cho.userinputvalidation("please enter the number of the student: ");
 
                     if(name_num>0 && name_num<=allstudent.stud_number()) System.out.println(allstudent.getnames(name_num-1)+" has a average grade of: "+ allstudent.getstudentAvg(name_num, subject.length));
-                    
+                    cho.scan2();
+
                     break;
                 case 4:
                     for(int x=0; x<allstudent.namelenght(); x++){
@@ -70,7 +73,9 @@ public class CourseGrades {
                         else System.out.println("invalid input!!!!!!");
                     }
                         else System.out.println("invalid input!!!!!!");
+                        cho.scan2();
                     break;
+                    
 
                 case 5:
                     
@@ -91,7 +96,6 @@ public class CourseGrades {
                     readStu.close();
                     
                     System.out.println(stu1);
-                    System.out.println(stu1.getname());
                     
                     } catch (FileNotFoundException e) {
                     System.out.println("File could not be found.");
@@ -108,6 +112,12 @@ public class CourseGrades {
                     System.err.println("ClassNotFoundException: " 
                     + e.getMessage());
                     }
+                    cho.scan2();
+                    break;
+                
+                case 6:
+                    System.out.println("Thank you!!!!");
+                    loop=true;
 
                     break;
 
@@ -115,8 +125,6 @@ public class CourseGrades {
                     System.out.println("Invalid input!!!!");
                     break;
                 }
-
-                loop= cho.looping();
 
             }
             scan.close();

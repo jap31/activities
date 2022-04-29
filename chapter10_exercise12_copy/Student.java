@@ -16,15 +16,11 @@ public class Student implements Serializable {
  public String toString() {
  String stuString="";
  for(int x=0; x<12; x++){
-    stuString+="Name:    "+stuName[x]+"\n";
+    stuString+="Name:          "+stuName[x]+"\n";
      for(int y=0; y<5; y++){
         stuString += subject[y]+"       " + stuGrade[x][y]+"\n";
  }  stuString+="\n"; }
  return(stuString);
- }
-
- public String getname(){
-    return "sdfasd";
  }
 
 }
