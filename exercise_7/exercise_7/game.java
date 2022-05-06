@@ -187,9 +187,4 @@ public class game {
             play.player6.reset_sco();
 
         }
-
-
-
-
-
 }

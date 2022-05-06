@@ -11,7 +11,6 @@ public class Palindrome {
 
         while(!loop) {   
             String word;
-
             cho.space();
             System.out.print("Enter the word: ");
             word=scan.nextLine();
